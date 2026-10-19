@@ -1,0 +1,132 @@
+# ============================================================
+# 站点基础配置
+# 部署到 Cloudflare Pages 后，把 baseURL 改成你的正式域名
+# 例如：https://my-blog.pages.dev/
+# ============================================================
+baseURL = "https://example.com/"
+locale = "zh-CN"
+defaultContentLanguage = "zh-cn"
+title = "我的博客"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+enableEmoji = true
+hasCJKLanguage = true
+summaryLength = 80
+mainSections = ["posts"]
+
+# 每页文章数（Hugo 0.128+ 的新写法）
+[pagination]
+  pagerSize = 10
+
+# 首页额外输出 JSON，供 PaperMod 搜索使用
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+
+# ============================================================
+# PaperMod 参数
+# ============================================================
+[params]
+  env = "production"
+  description = "记录技术、生活与思考"
+  author = "博主"
+  defaultTheme = "auto"
+  DateFormat = "2006-01-02"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  showtoc = true
+  tocopen = false
+  hidemeta = false
+  hideSummary = false
+  disableSpecial1stPost = true
+  disableScrollToTop = false
+  comments = false
+
+  # 首页欢迎语
+  [params.homeInfoParams]
+    Title = "你好，我是博主 👋"
+    Content = "欢迎来到我的博客。这里记录技术、生活与思考，也会分享一些正在折腾的小项目。"
+
+  # 头像/个人资料模式：默认关闭，想用改成 true
+  [params.profileMode]
+    enabled = false
+    title = "我的博客"
+    imageUrl = ""
+    imageTitle = ""
+
+  # 社交图标（把 url 换成你自己的）
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/"
+  [[params.socialIcons]]
+    name = "mail"
+    url = "mailto:you@example.com"
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
+
+  # 搜索参数
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    limit = 10
+    keys = ["title", "permalink", "summary", "content"]
+
+# ============================================================
+# 导航菜单
+# ============================================================
+[[menu.main]]
+  identifier = "posts"
+  name = "文章"
+  url = "/posts/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "archives"
+  name = "归档"
+  url = "/archives/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "tags"
+  name = "标签"
+  url = "/tags/"
+  weight = 30
+
+[[menu.main]]
+  identifier = "search"
+  name = "搜索"
+  url = "/search/"
+  weight = 40
+
+[[menu.main]]
+  identifier = "about"
+  name = "关于"
+  url = "/about/"
+  weight = 50
+
+# ============================================================
+# Markdown 渲染
+# ============================================================
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
