@@ -1,4 +1,4 @@
-# Hugo 构建产物
+﻿# Hugo 构建产物
 public/
 resources/_gen/
 .hugo_build.lock
@@ -11,3 +11,7 @@ Thumbs.db
 
 # 本地环境
 .env
+
+# wrangler 本地缓存
+.wrangler/
+
