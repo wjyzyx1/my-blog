@@ -1,9 +1,9 @@
-# 今天吃啥
+﻿# 今天吃啥
 
 基于 **Hugo + PaperMod** 的个人博客，通过 **Cloudflare Pages 的 Git 集成**自动构建发布。
 
 - 仓库：<https://github.com/wjyzyx1/my-blog>
-- 线上地址：`https://my-blog.pages.dev/`（以 Cloudflare 首次构建后实际给出的地址为准）
+- 线上地址：`https://wjyzyx.cc.cd/`（备用：`https://my-blog-3zi.pages.dev/`）
 - 本地 Hugo：`0.168.0`（extended，Windows amd64）
 
 ## 本地预览
@@ -79,7 +79,7 @@ HUGO_VERSION = 0.168.0
 
 ### 6. 回填 baseURL
 
-如果实际域名和 `my-blog.pages.dev` 不一致（重名时 Cloudflare 会自动加后缀），把 `hugo.toml` 里的：
+`my-blog` 这个子域名已被占用，所以实际 pages.dev 地址是 `my-blog-3zi.pages.dev`。正式域名是 `wjyzyx.cc.cd`，`baseURL` 已设为该域名：
 
 ```toml
 baseURL = "https://my-blog.pages.dev/"
@@ -153,3 +153,4 @@ hugo new content posts/xxx.md   # 新建文章
 | 页面样式正常但链接指向 `example.com` | `hugo.toml` 的 `baseURL` 没改 |
 | 文章列表为空 | 文章 `draft: true`，或 `date` 在未来 |
 | 搜索没结果 | 确认 `[outputs] home` 里有 `JSON`，且 `content/search.md` 存在 |
+

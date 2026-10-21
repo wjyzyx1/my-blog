@@ -3,7 +3,7 @@
 # 部署到 Cloudflare Pages 后，把 baseURL 改成你的正式域名
 # 例如：https://my-blog.pages.dev/
 # ============================================================
-baseURL = "https://my-blog.pages.dev/"
+baseURL = "https://wjyzyx.cc.cd/"
 locale = "zh-CN"
 defaultContentLanguage = "zh-cn"
 title = "今天吃啥"
