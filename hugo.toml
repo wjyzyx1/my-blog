@@ -3,10 +3,10 @@
 # 部署到 Cloudflare Pages 后，把 baseURL 改成你的正式域名
 # 例如：https://my-blog.pages.dev/
 # ============================================================
-baseURL = "https://example.com/"
+baseURL = "https://my-blog.pages.dev/"
 locale = "zh-CN"
 defaultContentLanguage = "zh-cn"
-title = "我的博客"
+title = "今天吃啥"
 theme = "PaperMod"
 
 enableRobotsTXT = true
@@ -31,7 +31,7 @@ mainSections = ["posts"]
 [params]
   env = "production"
   description = "记录技术、生活与思考"
-  author = "博主"
+  author = "wjyzyx"
   defaultTheme = "auto"
   DateFormat = "2006-01-02"
   ShowReadingTime = true
@@ -52,13 +52,13 @@ mainSections = ["posts"]
 
   # 首页欢迎语
   [params.homeInfoParams]
-    Title = "你好，我是博主 👋"
+    Title = "你好，我是 wjyzyx 👋"
     Content = "欢迎来到我的博客。这里记录技术、生活与思考，也会分享一些正在折腾的小项目。"
 
   # 头像/个人资料模式：默认关闭，想用改成 true
   [params.profileMode]
     enabled = false
-    title = "我的博客"
+    title = "今天吃啥"
     imageUrl = ""
     imageTitle = ""
 
@@ -66,9 +66,6 @@ mainSections = ["posts"]
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/"
-  [[params.socialIcons]]
-    name = "mail"
-    url = "mailto:you@example.com"
   [[params.socialIcons]]
     name = "rss"
     url = "/index.xml"
