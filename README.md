@@ -1,4 +1,4 @@
-﻿# 今天吃啥
+# 今天吃啥
 
 **Hugo + PaperMod** 静态博客，托管在 **Cloudflare Pages**（免费）。
 
@@ -14,7 +14,7 @@
 ## 本地预览
 
 ```powershell
-cd C:\Users\17978\blog
+cd D:\个人博客
 hugo server -D
 ```
 
@@ -45,7 +45,7 @@ C:\Users\17978\.cloudflare\pages_token.txt
 ### 每次发布
 
 ```powershell
-cd C:\Users\17978\blog
+cd D:\个人博客
 .\deploy.ps1
 ```
 
