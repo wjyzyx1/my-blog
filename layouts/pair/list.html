@@ -1,0 +1,13 @@
+{{- define "main" }}
+<script>document.body.classList.add('pair-page');</script>
+<div id="pair-app" class="pair-app" data-pagefind-ignore>
+  <div class="pair-loading">正在打开两只…</div>
+</div>
+<noscript>
+  <div class="pair-noscript">
+    <p>「两只」是一个需要 JavaScript 的私密双人空间原型。</p>
+    <p>请在浏览器设置中启用 JavaScript 后再访问。</p>
+  </div>
+</noscript>
+<script type="module" src="/pair/app.js?v=5"></script>
+{{- end }}

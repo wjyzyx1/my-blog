@@ -109,6 +109,12 @@ mainSections = ["posts"]
   weight = 40
 
 [[menu.main]]
+  identifier = "pair"
+  name = "两只"
+  url = "/pair/"
+  weight = 45
+
+[[menu.main]]
   identifier = "about"
   name = "关于"
   url = "/about/"
