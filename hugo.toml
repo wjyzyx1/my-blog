@@ -103,6 +103,12 @@ mainSections = ["posts"]
   weight = 30
 
 [[menu.main]]
+  identifier = "cpa"
+  name = "CPA"
+  url = "/cpa/"
+  weight = 35
+
+[[menu.main]]
   identifier = "search"
   name = "搜索"
   url = "/search/"
